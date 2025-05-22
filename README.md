@@ -1,48 +1,72 @@
-# 🚀 PROJETO FINAL - Exploradores Atemporais
-## 📌 Descrição Geral  
-O projeto propõe o desafio de desenvolver uma **exposição online**, concebida como um **museu virtual do futuro**, ambientado no ano de **3025**.  
-A missão é construir uma **página web interativa e responsiva**, utilizando **HTML, CSS** e práticas sólidas de **versionamento com Git**, estimulando criatividade e capacidade narrativa.  
+Explorador Temporal 3025 - Museu Virtual do Futuro
+Preview do Projeto *(Imagem ilustrativa - iPhone 14 como relíquia histórica)*
 
----
+📜 Descrição
+O Explorador Temporal 3025 é um museu virtual futurista que explora artefatos e costumes do início do século XXI (2020-2025) a partir da perspectiva do ano 3025. O projeto apresenta uma visão nostálgica e humorada de como nossa era atual seria exibida em um museu do futuro distante.
 
-## 🎨 Tema do Projeto: **Exploradores Atemporais**  
-O conceito parte da ideia de imaginar que **visitantes do futuro**, no ano de **3025**, acessam um portal virtual para entender como era o mundo no início do século XXI.  
-A página será apresentada como uma **cápsula do tempo digital**, contendo registros históricos, culturais e tecnológicos da nossa época, reais ou fictícios.  
+✨ Funcionalidades
+🖼️ Exposições virtuais divididas em categorias:
 
----
+Tecnologia Antiga
 
-## 🎯 Objetivos do Projeto  
-✅ **Desenvolver uma página web estruturada com HTML semântico**  
-✅ **Criar uma experiência interativa e responsiva para o usuário**  
-✅ **Estimular criatividade e storytelling na construção do museu virtual**  
-✅ **Consolidar o uso de Git e GitHub para versionamento e colaboração**  
-✅ **Aplicar boas práticas de layout moderno e usabilidade (UX/UI)**  
+Costumes e Moda
 
----
+Meio Ambiente
 
-## 🛠 Requisitos Técnicos  
+Cultura Pop
 
-### 🔹 **HTML**  
-✔️ Estruturar a página com `<header>`, `<main>`, `<section>`, `<article>`, `<footer>`.  
-✔️ Criar seções para as diferentes **"salas" do museu**.  
-✔️ Incluir **imagens, vídeos embutidos (YouTube ou fictícios) e textos**.  
-✔️ Implementar um **formulário para visitantes deixarem mensagens para o futuro**.  
+Invenções Futuras
 
-### 🔹 **CSS**  
-✔️ Criar um **design futurista** (cores metálicas, néon, elementos flutuantes).  
-✔️ Garantir um **layout responsivo** para diferentes dispositivos.  
-✔️ Adicionar **efeitos de hover, transições suaves e animações**.  
+🌠 Efeitos visuais com estrelas cadentes e fundo estelar
 
-### 🔹 **Git**  
-✔️ **Commits frequentes e bem descritos**.  
-✔️ **Uso de branches** para organização do projeto (`salas`, `formulário`).  
-✔️ Criar um **README.md documentando a proposta do projeto**.  
+✉️ Cápsula do tempo digital (formulário para enviar mensagens ao futuro)
 
----
-## Fontes:
+📱 Design responsivo (adaptável a diferentes telas)
 
-PRISMIC. 40 CSS Background Effects to Enhance Your Website. Disponível em: https://prismic.io/blog/css-background-effects. Acesso em: 22 maio 2025
+🛠️ Tecnologias Utilizadas
+HTML5 semântico
 
-CASTRO, Elizabeth; HYSLOP, Bruce. HTML5 e CSS3: Guia Prático e Visual. 7ª ed. Rio de Janeiro: Alta Books, 2013.
+CSS3 (animações e efeitos visuais)
 
+JavaScript (interatividade - a implementar)
 
+Normalize.css (para reset CSS - sugerido)
+
+🚀 Como Executar
+Clone o repositório:
+
+bash
+git clone https://github.com/seu-usuario/explorador-temporal-3025.git
+Abra o arquivo index.html em qualquer navegador moderno.
+
+🔮 Roadmap (Futuras Implementações)
+Adicionar animações CSS para as estrelas cadentes
+
+Implementar JavaScript para validação do formulário
+
+Criar efeito de "holograma" nas imagens das exposições
+
+Adicionar modo escuro/light automático
+
+Desenvolver versão em inglês (i18n)
+
+Criar sistema de "tour virtual" 3D
+
+🤝 Como Contribuir
+Contribuições são bem-vindas! Siga estes passos:
+
+Faça um fork do projeto
+
+Crie sua branch (git checkout -b feature/sua-feature)
+
+Commit suas mudanças (git commit -m 'Adiciona nova feature')
+
+Push para a branch (git push origin feature/sua-feature)
+
+Abra um Pull Request
+
+📄 Licença
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+
+🌍 Demonstração Online
+Link para demonstração (a ser configurado após deploy)
