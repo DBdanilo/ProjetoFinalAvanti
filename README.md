@@ -39,4 +39,6 @@ A página será apresentada como uma **cápsula do tempo digital**, contendo reg
 ✔️ Criar um **README.md documentando a proposta do projeto**.  
 
 ---
+Fontes: 
+https://prismic.io/blog/css-background-effects
 
