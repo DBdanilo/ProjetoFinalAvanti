@@ -1,25 +1,77 @@
 /* style.css */
 
+/* Paleta futurista cyberpunk */
+
 /* Reset e fonte base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
   color: #e0e0e0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
 
 header {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #101820;
-  color: #00ffff;
-  box-shadow: 0 0 10px #00ffff;
+  background: linear-gradient(90deg, #0f0026 60%, #ff00cc 100%);
+  color: #00fff7;
+  box-shadow: 0 0 20px #ff00cc99, 0 0 40px #00fff799;
+  border-bottom: 2px solid #ff00cc;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #ff00cc, 0 0 2px #00fff7;
+}
+
+header p {
+  color: #fff;
+  font-size: 1.2rem;
+  text-shadow: 0 0 4px #00fff7;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.nav-btn {
+  background: linear-gradient(90deg, #ff00cc 0%, #00fff7 100%);
+  color: #1a0033;
+  padding: 0.8rem 1.7rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  font-size: 1.05rem;
+  box-shadow: 0 0 12px #ff00cc99, 0 0 8px #00fff799;
+  transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+  letter-spacing: 1px;
+  outline: 2px solid #00fff7;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(90deg, #00fff7 0%, #ff00cc 100%);
+  color: #fff;
+  transform: scale(1.07);
+  box-shadow: 0 0 24px #ff00cc, 0 0 16px #00fff7;
+  outline: 2px solid #ff00cc;
 }
 
 main {
@@ -30,17 +82,23 @@ main {
 }
 
 .sala {
-  background-color: rgba(0, 255, 255, 0.05);
+  background: linear-gradient(120deg, #1a0033 80%, #ff00cc22 100%);
   padding: 1.5rem;
-  border: 1px solid #00ffff;
-  border-radius: 1rem;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  border: 2px solid #00fff7;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 20px #ff00cc33, 0 0 10px #00fff733;
 }
 
 .sala h2 {
-  color: #00ffff;
+  color: #00fff7; /* Azul neon para contraste */
   margin-bottom: 1rem;
   font-size: 1.8rem;
+  text-shadow: 0 0 8px #1a0033, 0 0 12px #ff00cc; /* Sombra escura e neon para destaque */
+  letter-spacing: 1.5px;
+  background: rgba(15, 0, 38, 0.7); /* Fundo translúcido para maior legibilidade */
+  padding: 0.4em 0.8em;
+  border-radius: 0.7em;
+  display: inline-block;
 }
 
 article {
@@ -55,23 +113,24 @@ article img,
 article iframe {
   max-width: 100%;
   height: auto;
-  border: 2px solid #00ffff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-  transition: transform 0.3s ease;
+  border: 2px solid #ff00cc;
+  border-radius: 12px;
+  box-shadow: 0 0 16px #00fff799, 0 0 8px #ff00cc99;
+  transition: transform 0.3s ease, box-shadow 0.3s;
 }
 
 article img:hover,
 article iframe:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 32px #ff00cc, 0 0 24px #00fff7;
 }
 
 #mensagem-futuro {
-  background-color: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(120deg, #1a0033 80%, #00fff722 100%);
   padding: 2rem;
-  border-radius: 1rem;
-  border: 1px solid #00ffff;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  border-radius: 1.2rem;
+  border: 2px solid #ff00cc;
+  box-shadow: 0 0 20px #ff00cc33, 0 0 10px #00fff733;
 }
 
 form {
@@ -82,37 +141,69 @@ form {
   margin: 0 auto;
 }
 
+form label {
+  color: #00fff7;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 form input,
 form textarea {
   padding: 0.75rem;
   border-radius: 0.5rem;
   border: none;
   background-color: #181818;
-  color: #00ffff;
+  color: #ff00cc;
   font-size: 1rem;
+  box-shadow: 0 0 8px #00fff733;
+  outline: 1.5px solid #ff00cc;
+  transition: outline 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 2.5px solid #00fff7;
 }
 
 form button {
-  background-color: #00ffff;
-  color: #101820;
+  background: linear-gradient(90deg, #ff00cc 0%, #00fff7 100%);
+  color: #1a0033;
   padding: 0.75rem;
   font-weight: bold;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 12px #ff00cc99, 0 0 8px #00fff799;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  outline: 2px solid #00fff7;
 }
 
 form button:hover {
-  background-color: #00cccc;
+  background: linear-gradient(90deg, #00fff7 0%, #ff00cc 100%);
+  color: #fff;
+  box-shadow: 0 0 24px #ff00cc, 0 0 16px #00fff7;
+  outline: 2px solid #ff00cc;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #101820;
-  border-top: 1px solid #00ffff;
-  color: #00ffff;
+  background: linear-gradient(90deg, #0f0026 60%, #ff00cc 100%);
+  border-top: 2px solid #00fff7;
+  color: #00fff7;
+  box-shadow: 0 0 20px #ff00cc99, 0 0 40px #00fff799;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #ff00cc;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #00fff7;
 }
 
 @media (min-width: 768px) {
@@ -132,4 +223,140 @@ footer {
   article h3 {
     font-size: 1.5rem;
   }
+
+  .sala article {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 2.5rem;
+  }
+
+  .sala article img,
+  .sala article iframe {
+    width: 320px;
+    max-width: 350px;
+    min-width: 220px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .sala article div {
+    flex: 1;
+    min-width: 220px;
+  }
 }
+
+/* Estrelas fixas e cadentes */
+.stars {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 0;
+  box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
+    22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white,
+    38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white,
+    53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white,
+    68vw 28vh 2px white, 73vw 45vh 1px white, 78vw 32vh 2px white,
+    83vw 48vh 1px white, 88vw 20vh 2px white, 93vw 52vh 1px white,
+    98vw 35vh 2px white, 5vw 60vh 1px white, 12vw 65vh 2px white,
+    18vw 72vh 1px white, 25vw 78vh 2px white, 30vw 85vh 1px white,
+    35vw 68vh 2px white, 40vw 82vh 1px white, 45vw 92vh 2px white,
+    50vw 75vh 1px white, 55vw 88vh 2px white, 60vw 95vh 1px white,
+    65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white,
+    80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white,
+    95vw 75vh 2px white;
+  animation: twinkle 8s infinite linear;
+  pointer-events: none;
+}
+
+.stars::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: white;
+  box-shadow: 8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white,
+    33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white,
+    57vw 22vh 2px white, 65vw 42vh 1px white, 73vw 28vh 2px white,
+    81vw 48vh 1px white, 89vw 32vh 2px white, 97vw 45vh 1px white,
+    3vw 68vh 2px white, 11vw 75vh 1px white, 19vw 82vh 2px white,
+    27vw 88vh 1px white, 35vw 72vh 2px white, 43vw 85vh 1px white,
+    51vw 92vh 2px white, 59vw 78vh 1px white;
+  animation: twinkle 6s infinite linear reverse;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.4; }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, white, transparent);
+  z-index: 1;
+  animation: shoot 3s infinite ease-in;
+  pointer-events: none;
+}
+
+.shooting-star:nth-child(2) {
+  top: 20%;
+  left: -100px;
+  animation-delay: 0s;
+}
+.shooting-star:nth-child(3) {
+  top: 35%;
+  left: -100px;
+  animation-delay: 1s;
+}
+.shooting-star:nth-child(4) {
+  top: 50%;
+  left: -100px;
+  animation-delay: 2s;
+}
+.shooting-star:nth-child(5) {
+  top: 65%;
+  left: -100px;
+  animation-delay: 2.5s;
+}
+.shooting-star:nth-child(6) {
+  top: 80%;
+  left: -100px;
+  animation-delay: 3s;
+}
+
+@keyframes shoot {
+  0% {
+    transform: translateX(0) translateY(0) rotate(25deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(120vw) translateY(50vh) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+.banner-cyberpunk {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  background: #0b0b2b;
+}
+
+.banner-cyberpunk img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+/* Sugestão: para um visual ainda mais cyberpunk, adicione a fonte Orbitron no <head> do HTML:
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+*/
