@@ -39,6 +39,10 @@ A página será apresentada como uma **cápsula do tempo digital**, contendo reg
 ✔️ Criar um **README.md documentando a proposta do projeto**.  
 
 ---
-Fontes: 
-https://prismic.io/blog/css-background-effects
+## Fontes:
+
+PRISMIC. 40 CSS Background Effects to Enhance Your Website. Disponível em: https://prismic.io/blog/css-background-effects. Acesso em: 22 maio 2025
+
+CASTRO, Elizabeth; HYSLOP, Bruce. HTML5 e CSS3: Guia Prático e Visual. 7ª ed. Rio de Janeiro: Alta Books, 2013.
+
 
